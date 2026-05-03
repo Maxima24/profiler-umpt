@@ -16,8 +16,10 @@ export default function DashboardPage() {
         ]);
         setStats({ total: profilesRes?.total });
         setUser(meRes?.data);
-      } catch {
+      } catch(err) {
         // window.location.href = '/login';
+        console.error(err)
+        
       }
     }
     load();
