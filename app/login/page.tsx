@@ -21,7 +21,7 @@ export default function LoginPage() {
         </p>
 
         <a
-          href={`${API_URL}/auth/github/web`}
+          href={`https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_WEB_CLIENT_ID!}&redirect_uri=${process.env.NEXT_PUBLIC_GITHUB_CALLBACK_URL!}&scope=user:email`}
           style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
             background: '#21262d', border: '1px solid #30363d', borderRadius: 8,
