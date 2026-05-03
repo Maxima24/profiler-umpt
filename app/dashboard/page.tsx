@@ -17,7 +17,7 @@ export default function DashboardPage() {
         setStats({ total: profilesRes?.total });
         setUser(meRes?.data);
       } catch {
-        window.location.href = '/login';
+        // window.location.href = '/login';
       }
     }
     load();
